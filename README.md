@@ -1,7 +1,3 @@
-[![ci-meteor-application-template-production](https://github.com/ics-software-engineering/meteor-application-template-production/actions/workflows/ci.yml/badge.svg)](https://github.com/ics-software-engineering/meteor-application-template-production/actions/workflows/ci.yml)
-
-For details, please see http://ics-software-engineering.github.io/meteor-application-template-production/
-
 ## About DOELT 
 
 The Hawaii Department of Education supports our state by promoting student achievement and  fostering educational excellence while ensuring equal access for all. The DOE's Innovation, Planning, and Evaluation Branch manages the department's legislative initiatives. Legislative initiatives are currently handled using a system called IBM Lotus Notes. Our application, DOE Legislative Tracker, or DOELT, modernizes the DOE's outdated tracking system by introducing a modern user interface and improving the access and usability of the system. Because DOELT is a web application, it can be accessed from any location and from any device that is connected to a network.
@@ -27,3 +23,4 @@ The next step is building multiple levels of administrative authority, which wil
 - DevPost: https://devpost.com/software/doelt?ref_content=my-projects-tab&ref_feature=my_projects
 - Functional Evaluation Video: https://www.youtube.com/watch?v=0rt54E251uU&t=3s
 
+Built with: http://ics-software-engineering.github.io/meteor-application-template-production/
