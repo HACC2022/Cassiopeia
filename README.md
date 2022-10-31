@@ -27,7 +27,7 @@ The next step is building multiple levels of administrative authority, which wil
 6. id: submitter, password: changeme
 
 ## Links
-- Deployed website: http://165.232.137.149/ (https://doelt-hawaii.xyz/) pending
+- Deployed website: http://165.232.137.149/
 - DevPost: https://devpost.com/software/doelt?ref_content=my-projects-tab&ref_feature=my_projects
 - Functional Evaluation Video: https://www.youtube.com/watch?v=0rt54E251uU&t=3s
 
