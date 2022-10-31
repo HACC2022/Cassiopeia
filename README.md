@@ -18,7 +18,7 @@ The next step is building multiple levels of administrative authority, which wil
 4. Run the system with: ```meteor npm run start```
 5. Go to http://localhost:3000 to see the app.
 
-# Credentials for Development Environment
+## Credentials for Development Environment
 1. id: assigner, password: changeme
 2. id: writer, password: changeme
 3. id: officeapv, password: changeme
