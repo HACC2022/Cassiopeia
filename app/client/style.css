@@ -1,0 +1,336 @@
+/* Use Open Sans as the default sans serif font. */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Source+Code+Pro:300,400,500,700');
+
+/* Set up some CSS variables to theme the application. */
+:root {
+  --matr-navbar-bg: #ececec;
+  --matr-navbar-bg-rgb: 236, 236, 236;
+  --bs-body-font-family: 'Oswald', sans-serif !important;
+}
+
+/* Change bootstrap variable values.
+ See https://getbootstrap.com/docs/5.2/customize/css-variables/
+ */
+body {
+  --bs-light-rgb: var(--matr-navbar-bg-rgb);
+  color: #313131 !important;
+  background-color: #f3f3f3 !important;
+}
+
+a {
+  --bs-link-color: #57749f;
+  --bs-link-hover-color: #7693c0;
+}
+
+.page-link {
+  --bs-link-color: #6175bd;
+  --bs-pagination-color: #404d70;
+  --bs-pagination-border-color: #404d70;
+  --bs-pagination-active-bg: #404d70;
+  --bs-pagination-active-border-color: #404d70;
+  --bs-pagination-hover-color: #2e374f;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Set the alert background on the signin and signup pages. */
+
+#signin-page .alert-light,
+#signup-page .alert-light {
+  --bs-alert-bg: var(--matr-navbar-bg);
+}
+
+/* Custom styles for the dashboard page */
+#dashboard-screen {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#filter-border {
+  border-style: none;
+  background-color: white;
+  border-radius: 8px;
+}
+
+#filter-border .accordion-button:not(.collapsed), .accordion-item:not(.collapsed)  {
+  --bs-accordion-active-bg: #3e465d;
+  --bs-accordion-active-color: white;
+  --bs-accordion-border-color: #7d828a;
+  --bs-accordion-border-width: 2px;
+  --bs-accordion-border-radius: 8px;
+  --bs-btn-active-color: white;
+}
+
+.perPage .btn-primary {
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  --bs-btn-bg: #f1f1f1;
+  --bs-btn-color: #313131;
+  --bs-btn-border-color: #e3e3e3;
+  --bs-btn-hover-bg: #eaeaea;
+  --bs-btn-hover-color: #313131;
+  --bs-btn-hover-border-color: #e3e3e3;
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-bg: #eaeaea;
+  --bs-btn-active-border-color: #e3e3e3;
+}
+
+.dateFilterButtons:hover {
+  background-color: #cfd1d5 !important;
+  color: gray !important;
+  border-color: #c5c7ce !important;
+}
+
+.dateFilterButtons:focus {
+  background-color: #5e6b8c !important;
+  box-shadow: none !important;
+}
+
+#dashboard-list thead {
+  position: sticky;
+  top: 0;
+  margin: 0 0 0 0;
+  background-color: white;
+}
+
+/* Define custom styles */
+.gray-background {
+  background-color: var(--matr-navbar-bg);
+  color: var(--bs-dark);
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* the main dropdowns on the 'all bills' page */
+#allBillsDropdown {
+  background-color: transparent;
+  padding: 0;
+  color: #313131;
+  border-width: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  --bs-btn-focus-shadow-rgb: none;
+}
+
+#savedFilterDropdown {
+  background-color: #404d70;
+  color: white;
+  border-width: 0;
+  --bs-btn-focus-shadow-rgb: none;
+  width: 170px;
+}
+
+/*  not sure how to do the bootstrap attributes (eg --bs-accordion-active-bg) in the .jsx files so these stay here for now -Rob */
+.introducerAccordion .accordion-button {
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: transparent;
+  font-size: small;
+  text-align: center !important;
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.billAccordion .accordion-body {
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: transparent;
+  z-index: 0;
+  margin: 0 auto;
+  font-size: 13px;
+  padding: 0;
+}
+
+.billAccordion .accordion-button {
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: transparent;
+  z-index: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.introducerAccordionList .accordion-body {
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: transparent;
+  z-index: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.introducerAccordionList .accordion-button {
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: transparent;
+  z-index: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.accordion {
+  --bs-accordion-bg: transparent !important;
+}
+
+.accordion-button:focus {
+  --bs-accordion-btn-focus-border-color: transparent;
+  --bs-accordion-btn-focus-box-shadow: transparent;
+}
+
+.accordion-body {
+  padding: 0 !important;
+}
+
+.logInButton .btn-primary {
+  width: 100%;
+  font-weight: bold;
+  --bs-btn-bg: #2e374f;
+  --bs-btn-border-color: #242c41;
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: white;
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-border-color: #242c41;
+}
+
+.logInButton:hover .btn-primary {
+  background-color: #374054 !important;
+  border-color: #374054 !important;
+}
+
+.halpButton .btn-primary {
+  --bs-btn-bg: #2e374f;
+  --bs-btn-border-color: #242c41;
+}
+
+.pdfFiller .form-control {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  border: 0 #e3e3e3;
+}
+
+.testimonyName .form-control {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: x-small;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.testimonyTitle .form-control {
+  top: -20px;
+  position: relative;
+  font-size: x-small;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.testimonyAddress {
+  font-size: small;
+  line-height: 1.2em;
+}
+
+.testimonyHearingInfo .form-control {
+  display: inline;
+  width: auto;
+}
+
+.doePosition .form-control::placeholder {
+  color: gray;
+}
+
+#generatePdfButton {
+  padding-left: 10px;
+  --bs-btn-border-width: 0;
+  --bs-btn-color: black;
+  --bs-btn-bg: #F7F7F7;
+  --bs-btn-disabled-color: gray;
+  --bs-btn-disabled-bg: F7F7F7;
+  --bs-btn-hover-color: gray;
+  --bs-btn-hover-bg: #F7F7F7;
+  --bs-btn-focus-shadow-rgb: #F7F7F7;
+  --bs-btn-active-color: #gray;
+  --bs-btn-active-bg: #F7F7F7;
+  --bs-btn-active-border-color: #F7F7F7;
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-border-color: #F7F7F7;
+}
+
+.testimonyNavbarButtons .btn-primary {
+  padding-left: 10px;
+  --bs-btn-border-width: 0;
+  --bs-btn-color: black;
+  --bs-btn-bg: #F7F7F7;
+  --bs-btn-disabled-color: gray;
+  --bs-btn-disabled-bg: F7F7F7;
+  --bs-btn-hover-color: gray;
+  --bs-btn-hover-bg: #F7F7F7;
+  --bs-btn-focus-shadow-rgb: #F7F7F7;
+  --bs-btn-active-color: #gray;
+  --bs-btn-active-bg: #F7F7F7;
+  --bs-btn-active-border-color: #F7F7F7;
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-border-color: #F7F7F7;
+}
+
+.testimonyNavbarButtons .bth.disabled, .btn:disabled {
+  --bs-btn-disabled-color: black;
+  --bs-btn-disabled-bg: F7F7F7;
+  --bs-btn-border-width: 0;
+}
+
+.mobileMainBody {
+  margin-left: 60px;
+  width: 90%;
+  font-size: 10px;
+}
+
+.closedNavButtonStyle {
+  background-color: #2e374f !important;
+  width: 62px !important;
+  border-radius: 0 !important;
+  border-width: 0 !important;
+  font-weight: normal !important;
+  font-size: 20px !important;
+  box-shadow: none !important;
+}
+
+.navButtonStyle {
+  background-color: #2e374f !important;
+  border-width: 0 !important;
+  border-radius: 0 !important;
+  width: 132px !important;
+  font-weight: normal !important;
+  font-size: 20px !important;
+  margin-top: 0 !important;
+  box-shadow: none !important;
+}
+
+.navButtons .btn:focus {
+  border-color: transparent;
+}
+
+.navButtons:hover {
+  color: #586586 !important;
+}
+
+.forgotPw:hover {
+  color: #b6bbc5 !important;
+}
+
+#editTestButtons {
+  --bs-btn-border-width: 0;
+  --bs-btn-color: black;
+  --bs-btn-bg: white;
+  --bs-btn-disabled-color: gray;
+  --bs-btn-disabled-bg: F7F7F7;
+  --bs-btn-hover-color: gray;
+  --bs-btn-hover-bg: #F7F7F7;
+  --bs-btn-focus-shadow-rgb: #F7F7F7;
+  --bs-btn-active-color: #gray;
+  --bs-btn-active-bg: #F7F7F7;
+  --bs-btn-active-border-color: #F7F7F7;
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-border-color: #F7F7F7;
+}
