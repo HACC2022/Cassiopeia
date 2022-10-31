@@ -18,6 +18,14 @@ The next step is building multiple levels of administrative authority, which wil
 4. Run the system with: ```meteor npm run start```
 5. Go to http://localhost:3000 to see the app.
 
+# Credentials for Development Environment
+1. id: assigner, password: changeme
+2. id: writer, password: changeme
+3. id: officeapv, password: changeme
+4. id: pipeapv, password: changeme
+5. id: finalapv, password: changeme
+6. id: submitter, password: changeme
+
 ## Links
 - Deployed website: http://165.232.137.149/ (https://doelt-hawaii.xyz/) pending
 - DevPost: https://devpost.com/software/doelt?ref_content=my-projects-tab&ref_feature=my_projects
