@@ -13,7 +13,7 @@ The next step is building multiple levels of administrative authority, which wil
 ## How to Use the App
 
 1. Clone the GitHub repository to your computer. 
-2. Make sure that you have meteor installed, a guide can be found [here](https://www.meteor.com/developers/install)
+2. Make sure that you have meteor installed, a guide can be found [here](https://www.meteor.com/developers/install).
 3. Next, cd into the app/ directory of your local copy of the repo, and install third party libraries with: ```meteor npm install```
 4. Run the system with: ```meteor npm run start```
 5. Go to http://localhost:3000 to see the app.
@@ -27,8 +27,18 @@ The next step is building multiple levels of administrative authority, which wil
 6. id: submitter, password: changeme
 
 ## Links
-- Deployed website: http://165.232.137.149/
-- DevPost: https://devpost.com/software/doelt?ref_content=my-projects-tab&ref_feature=my_projects
-- Functional Evaluation Video: https://www.youtube.com/watch?v=0rt54E251uU&t=3s
+- [Deployed Website](http://165.232.137.149/)
+- [DevPost](https://devpost.com/software/doelt?ref_content=my-projects-tab&ref_feature=my_projects)
+- [Functional Evaluation Video](https://www.youtube.com/watch?v=0rt54E251uU&t=3s)
+- GitHub repositories used while building this application:
+    - [Original](https://github.com/HACC-Cassiopeia/Legislative-Scraper)
+    - [Production](https://github.com/HACC-Cassiopeia/Legislative-Scraper-Production)
 
-Built with: http://ics-software-engineering.github.io/meteor-application-template-production/
+## Team Members
+- [Ana Araujo](https://acatarinaoaraujo.github.io/)
+- [Giorgio Tran](https://giorgio-tran.github.io/)
+- [Kayla Hirano](https://khirano7.github.io/)
+- [Rob Godfrey](https://robertgodfrey.github.io/)
+- [Shin Saito](https://saitoshi.github.io/)
+
+Built with the [UH ICS Meteor Template](http://ics-software-engineering.github.io/meteor-application-template-production/)
