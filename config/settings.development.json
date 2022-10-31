@@ -1,11 +1,11 @@
 {
   "defaultAccounts": [
-    {"email": "ASSIGNER", "password": "changeme", "role": "ASSIGNER" , "firstName": "Assigner", "lastName": "Doe"},
-    {"email": "WRITER", "password": "changeme", "role": "WRITER" , "firstName": "Writer", "lastName": "Doe"},
-    {"email": "OFFICEAPV", "password": "changeme", "role": "OFFICE_APV" , "firstName": "Office Approver", "lastName": "Doe"},
-    {"email": "PIPEAPV", "password": "changeme", "role": "PIPE_APV" , "firstName": "PIPE Approver", "lastName": "Doe"},
-    {"email": "FINALAPV", "password": "changeme", "role": "FINAL_APV" , "firstName": "Final Approver", "lastName": "Doe"},
-    {"email": "SUBMITTER", "password": "changeme", "role": "SUBMITTER" , "firstName": "John", "lastName": "Doe"}
+    {"email": "assigner", "password": "changeme", "role": "ASSIGNER" , "firstName": "Assigner", "lastName": "Doe"},
+    {"email": "writer", "password": "changeme", "role": "WRITER" , "firstName": "Writer", "lastName": "Doe"},
+    {"email": "officeapv", "password": "changeme", "role": "OFFICE_APV" , "firstName": "Office Approver", "lastName": "Doe"},
+    {"email": "pipeapv", "password": "changeme", "role": "PIPE_APV" , "firstName": "PIPE Approver", "lastName": "Doe"},
+    {"email": "finalapv", "password": "changeme", "role": "FINAL_APV" , "firstName": "Final Approver", "lastName": "Doe"},
+    {"email": "submitter", "password": "changeme", "role": "SUBMITTER" , "firstName": "John", "lastName": "Doe"}
   ],
 
   "public": {

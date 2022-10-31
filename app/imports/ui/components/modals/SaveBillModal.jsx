@@ -112,7 +112,7 @@ const SaveBillModal = ({ show, onHide, onSubmit }) => {
 };
 
 SaveBillModal.propTypes = {
-  show: PropTypes.string.isRequired,
+  show: PropTypes.bool.isRequired,
   onHide: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
 };

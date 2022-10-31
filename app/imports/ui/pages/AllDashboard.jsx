@@ -438,9 +438,9 @@ const AllDashboard = () => {
         </thead>
         <tbody>
           { filteredMeasures.length === 0 || loading
-            ? ''
+            ? <tr><td> </td></tr>
             : filteredMeasures
-              .map((bill) => <AllBill key={bill._id} bill={bill} />)
+              .map((bill, index) => <AllBill key={index} bill={bill} />)
               .slice(firstIndex, lastIndex)}
         </tbody>
       </Table>

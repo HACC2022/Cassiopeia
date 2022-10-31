@@ -10,6 +10,7 @@ import { SavedMeasures } from '../../../api/savedMeasures/SavedMeasuresCollectio
 import LoadingSpinner from '../LoadingSpinner';
 import { Testimonies } from '../../../api/testimony/TestimonyCollection';
 import { defineMethod } from '../../../api/base/BaseCollection.methods';
+import { useNavigate } from 'react-router';
 
 const formSchema = new SimpleSchema({
   governorName: String,
@@ -42,6 +43,11 @@ const CreateTestimonyModal = ({ show, handleClose, _code }) => {
       ready: rdy,
     };
   }, false);
+
+  const navigate = useNavigate();
+  if (!bill && ready) {
+    navigate('/*');
+  }
 
   const submit = (data) => {
     const lastEditedBy = Meteor.user().username;

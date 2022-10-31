@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Card, Row, Container, Table, Col, Button, Spinner } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
@@ -98,7 +99,6 @@ const Home = () => {
       </Col>
     );
   }
-
   return (
     <div>
       {width < breakPoint ? <MobileSideBar page="home" /> : getDesktopSidebar()}
@@ -108,6 +108,7 @@ const Home = () => {
             <b>DOELT</b>
           </h1>
           <h6 className="p-0">Department of Education Legislative Tracker</h6>
+          <h6><b>Logged in as: {`${Meteor.user() ? Meteor.user().username : '-'}`}</b></h6>
           <Row className="pt-3">
             <Card className="p-0">
               <Card.Header style={sectionHeaders}>
